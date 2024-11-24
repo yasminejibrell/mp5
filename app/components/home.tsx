@@ -31,7 +31,7 @@ export default function HomePage() {
         }}
       >
         <FormHelperText sx={{ textAlign: "center", marginBottom: "25px", fontSize: "25px"}}>
-          <p className="text-red-900">Craft your own unique URL to share with all your family and friends!!</p>
+          <span className="text-red-900">Craft your own unique URL to share with all your family and friends!!</span>
         </FormHelperText>
         {error.length > 0 && <p>{error}</p>}
         <br></br>
