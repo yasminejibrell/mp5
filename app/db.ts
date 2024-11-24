@@ -7,7 +7,6 @@ if (!MONGO_URI) {
 
 const DB_NAME="cs391-url-shortener";
 export const ALIASES_COLLECTION = "aliases";
-export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://CS391URL-Shortener.com";
 
 let client: MongoClient | null = null;
 let db: Db | null = null;
