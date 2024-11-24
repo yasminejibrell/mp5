@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default async function Links() {
   const aliasesCollection = await getCollection(ALIASES_COLLECTION);
-  const todo = await aliasesCollection.find({}).toArray();
+  const links = await aliasesCollection.find({}).toArray();
 
   return (
     <div className="bg-red-100 p-4 min-h-screen">
@@ -11,7 +11,7 @@ export default async function Links() {
       <h1 className="text-red-700 text-4xl font-semibold text-center mb-3 p-4">Link Directory</h1>
       <h1 className="text-red-900 font-semibold text-center mb-8">Look here to see which aliases have already been taken!</h1>
       <div className="flex flex-wrap justify-between gap-5">
-        {todo.map((alias, index) => (
+        {links.map((alias, index) => (
           <div
             key={index}
             className="bg-red-200 p-5 rounded-xl w-full sm:w-96"
@@ -27,7 +27,7 @@ export default async function Links() {
           </div>
         ))}
       </div>
-    </div>
+      </div>
     </div>
   );
 }
