@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header className="flex justify-between items-center h-20 text-red-700 bg-red-200">
             <Link href="/" className="text-2xl font-semibold p-4 hover:underline">
-                    Yasmine Jibrell's URL Shortener
+                    Yasmine Jibrell&apos;s URL Shortener
             </Link>
             <nav className="p-2 m-4">
                 <Link href="/" className={linkStyling}>
